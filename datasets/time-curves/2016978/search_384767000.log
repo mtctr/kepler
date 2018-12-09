@@ -1,0 +1,1109 @@
+--2018-12-09 13:00:42--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/137/35/kplr002016978-2009131105131_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/137/35/kplr002016978-2009131105131_llc.fits [following]
+--2018-12-09 13:00:43--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/137/35/kplr002016978-2009131105131_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 77760 (76K) [image/x-fits]
+Saving to: 'kplr002016978-2009131105131_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 65% 43,1K 1s
+    50K .......... .......... .....                           100%  127K=1,4s
+
+2018-12-09 13:00:45 (55,7 KB/s) - 'kplr002016978-2009131105131_llc.fits' saved [77760/77760]
+
+--2018-12-09 13:00:45--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/142/61/kplr002016978-2009131105131_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/142/61/kplr002016978-2009131105131_llc_lc.tbl [following]
+--2018-12-09 13:00:46--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/142/61/kplr002016978-2009131105131_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 158913 (155K) [text/plain]
+Saving to: 'kplr002016978-2009131105131_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... .......... 32% 42,8K 2s
+    50K .......... .......... .......... .......... .......... 64% 85,8K 1s
+   100K .......... .......... .......... .......... .......... 96%  115K 0s
+   150K .....                                                 100% 5,50M=2,2s
+
+2018-12-09 13:00:49 (71,0 KB/s) - 'kplr002016978-2009131105131_llc_lc.tbl' saved [158913/158913]
+
+--2018-12-09 13:00:49--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/147/93/kplr002016978-2009166043257_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/147/93/kplr002016978-2009166043257_llc.fits [following]
+--2018-12-09 13:00:49--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/147/93/kplr002016978-2009166043257_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 192960 (188K) [image/x-fits]
+Saving to: 'kplr002016978-2009166043257_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 26% 42,9K 3s
+    50K .......... .......... .......... .......... .......... 53%  129K 1s
+   100K .......... .......... .......... .......... .......... 79%  129K 0s
+   150K .......... .......... .......... ........             100%  197K=2,1s
+
+2018-12-09 13:00:52 (88,3 KB/s) - 'kplr002016978-2009166043257_llc.fits' saved [192960/192960]
+
+--2018-12-09 13:00:52--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/163/55/kplr002016978-2009166043257_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/163/55/kplr002016978-2009166043257_llc_lc.tbl [following]
+--2018-12-09 13:00:53--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/163/55/kplr002016978-2009166043257_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 533399 (521K) [text/plain]
+Saving to: 'kplr002016978-2009166043257_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  9% 43,0K 11s
+    50K .......... .......... .......... .......... .......... 19% 85,0K 7s
+   100K .......... .......... .......... .......... .......... 28%  216K 5s
+   150K .......... .......... .......... .......... .......... 38%  141K 4s
+   200K .......... .......... .......... .......... .......... 47%  216K 3s
+   250K .......... .......... .......... .......... .......... 57%  142K 2s
+   300K .......... .......... .......... .......... .......... 67%  258K 2s
+   350K .......... .......... .......... .......... .......... 76%  160K 1s
+   400K .......... .......... .......... .......... .......... 86%  180K 1s
+   450K .......... .......... .......... .......... .......... 95%  254K 0s
+   500K .......... ..........                                 100% 8,94M=3,9s
+
+2018-12-09 13:00:58 (133 KB/s) - 'kplr002016978-2009166043257_llc_lc.tbl' saved [533399/533399]
+
+--2018-12-09 13:00:58--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/212/45/kplr002016978-2009259160929_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/212/45/kplr002016978-2009259160929_llc.fits [following]
+--2018-12-09 13:00:58--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/212/45/kplr002016978-2009259160929_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 466560 (456K) [image/x-fits]
+Saving to: 'kplr002016978-2009259160929_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,6K 10s
+    50K .......... .......... .......... .......... .......... 21% 85,1K 6s
+   100K .......... .......... .......... .......... .......... 32%  247K 4s
+   150K .......... .......... .......... .......... .......... 43%  132K 3s
+   200K .......... .......... .......... .......... .......... 54%  246K 2s
+   250K .......... .......... .......... .......... .......... 65%  133K 2s
+   300K .......... .......... .......... .......... .......... 76%  257K 1s
+   350K .......... .......... .......... .......... .......... 87%  259K 0s
+   400K .......... .......... .......... .......... .......... 98%  127K 0s
+   450K .....                                                 100% 36,6G=3,7s
+
+2018-12-09 13:01:03 (123 KB/s) - 'kplr002016978-2009259160929_llc.fits' saved [466560/466560]
+
+--2018-12-09 13:01:03--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/229/08/kplr002016978-2009259160929_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/229/08/kplr002016978-2009259160929_llc_lc.tbl [following]
+--2018-12-09 13:01:03--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/229/08/kplr002016978-2009259160929_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1407822 (1,3M) [text/plain]
+Saving to: 'kplr002016978-2009259160929_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,9K 31s
+    50K .......... .......... .......... .......... ..........  7% 86,5K 22s
+   100K .......... .......... .......... .......... .......... 10%  129K 17s
+   150K .......... .......... .......... .......... .......... 14%  251K 14s
+   200K .......... .......... .......... .......... .......... 18%  130K 12s
+   250K .......... .......... .......... .......... .......... 21%  256K 10s
+   300K .......... .......... .......... .......... .......... 25%  256K 9s
+   350K .......... .......... .......... .......... .......... 29%  253K 8s
+   400K .......... .......... .......... .......... .......... 32%  259K 7s
+   450K .......... .......... .......... .......... .......... 36%  245K 6s
+   500K .......... .......... .......... .......... .......... 40%  274K 6s
+   550K .......... .......... .......... .......... .......... 43% 4,69M 5s
+   600K .......... .......... .......... .......... .......... 47%  249K 5s
+   650K .......... .......... .......... .......... .......... 50%  266K 4s
+   700K .......... .......... .......... .......... .......... 54% 4,17M 4s
+   750K .......... .......... .......... .......... .......... 58%  259K 3s
+   800K .......... .......... .......... .......... .......... 61%  260K 3s
+   850K .......... .......... .......... .......... .......... 65% 6,12M 2s
+   900K .......... .......... .......... .......... .......... 69%  259K 2s
+   950K .......... .......... .......... .......... .......... 72%  266K 2s
+  1000K .......... .......... .......... .......... .......... 76% 10,5M 2s
+  1050K .......... .......... .......... .......... .......... 80%  257K 1s
+  1100K .......... .......... .......... .......... .......... 83% 4,81M 1s
+  1150K .......... .......... .......... .......... .......... 87%  264K 1s
+  1200K .......... .......... .......... .......... .......... 90% 3,86M 1s
+  1250K .......... .......... .......... .......... .......... 94%  275K 0s
+  1300K .......... .......... .......... .......... .......... 98% 3,35M 0s
+  1350K .......... .......... ....                            100% 20,5M=5,7s
+
+2018-12-09 13:01:10 (242 KB/s) - 'kplr002016978-2009259160929_llc_lc.tbl' saved [1407822/1407822]
+
+--2018-12-09 13:01:10--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/245/72/kplr002016978-2009350155506_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/245/72/kplr002016978-2009350155506_llc.fits [following]
+--2018-12-09 13:01:11--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/245/72/kplr002016978-2009350155506_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 466560 (456K) [image/x-fits]
+Saving to: 'kplr002016978-2009350155506_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 23,2K 17s
+    50K .......... .......... .......... .......... .......... 21% 42,8K 12s
+   100K .......... .......... .......... .......... .......... 32% 50,8K 9s
+   150K .......... .......... .......... .......... .......... 43% 63,6K 7s
+   200K .......... .......... .......... .......... .......... 54% 51,5K 5s
+   250K .......... .......... .......... .......... .......... 65% 64,5K 4s
+   300K .......... .......... .......... .......... .......... 76% 64,1K 2s
+   350K .......... .......... .......... .......... .......... 87% 85,7K 1s
+   400K .......... .......... .......... .......... .......... 98% 64,3K 0s
+   450K .....                                                 100% 36,6G=9,0s
+
+2018-12-09 13:01:51 (50,7 KB/s) - 'kplr002016978-2009350155506_llc.fits' saved [466560/466560]
+
+--2018-12-09 13:01:51--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/262/28/kplr002016978-2009350155506_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/262/28/kplr002016978-2009350155506_llc_lc.tbl [following]
+--2018-12-09 13:01:51--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/262/28/kplr002016978-2009350155506_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1412957 (1,3M) [text/plain]
+Saving to: 'kplr002016978-2009350155506_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,8K 31s
+    50K .......... .......... .......... .......... ..........  7% 86,7K 22s
+   100K .......... .......... .......... .......... .......... 10%  128K 18s
+   150K .......... .......... .......... .......... .......... 14%  131K 15s
+   200K .......... .......... .......... .......... .......... 18%  129K 13s
+   250K .......... .......... .......... .......... .......... 21%  128K 12s
+   300K .......... .......... .......... .......... .......... 25%  130K 11s
+   350K .......... .......... .......... .......... .......... 28%  253K 10s
+   400K .......... .......... .......... .......... .......... 32%  128K 9s
+   450K .......... .......... .......... .......... .......... 36%  128K 8s
+   500K .......... .......... .......... .......... .......... 39%  256K 7s
+   550K .......... .......... .......... .......... .......... 43%  128K 7s
+   600K .......... .......... .......... .......... .......... 47% 86,6K 7s
+   650K .......... .......... .......... .......... .......... 50%  126K 6s
+   700K .......... .......... .......... .......... .......... 54%  184K 5s
+   750K .......... .......... .......... .......... .......... 57%  160K 5s
+   800K .......... .......... .......... .......... .......... 61%  181K 4s
+   850K .......... .......... .......... .......... .......... 65%  158K 4s
+   900K .......... .......... .......... .......... .......... 68%  258K 3s
+   950K .......... .......... .......... .......... .......... 72%  184K 3s
+  1000K .......... .......... .......... .......... .......... 76%  258K 3s
+  1050K .......... .......... .......... .......... .......... 79%  258K 2s
+  1100K .......... .......... .......... .......... .......... 83%  159K 2s
+  1150K .......... .......... .......... .......... .......... 86%  255K 1s
+  1200K .......... .......... .......... .......... .......... 90%  128K 1s
+  1250K .......... .......... .......... .......... .......... 94% 57,8K 1s
+  1300K .......... .......... .......... .......... .......... 97%  100K 0s
+  1350K .......... .......... .........                       100%  352K=11s
+
+2018-12-09 13:02:03 (130 KB/s) - 'kplr002016978-2009350155506_llc_lc.tbl' saved [1412957/1412957]
+
+--2018-12-09 13:02:03--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/344/99/kplr002016978-2010078095331_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/344/99/kplr002016978-2010078095331_llc.fits [following]
+--2018-12-09 13:02:03--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/344/99/kplr002016978-2010078095331_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 469440 (458K) [image/x-fits]
+Saving to: 'kplr002016978-2010078095331_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,8K 10s
+    50K .......... .......... .......... .......... .......... 21%  127K 6s
+   100K .......... .......... .......... .......... .......... 32% 85,6K 4s
+   150K .......... .......... .......... .......... .......... 43%  241K 3s
+   200K .......... .......... .......... .......... .......... 54%  132K 2s
+   250K .......... .......... .......... .......... .......... 65%  231K 2s
+   300K .......... .......... .......... .......... .......... 76%  135K 1s
+   350K .......... .......... .......... .......... .......... 87%  251K 1s
+   400K .......... .......... .......... .......... .......... 98%  246K 0s
+   450K ........                                              100% 6,34M=3,7s
+
+2018-12-09 13:02:08 (123 KB/s) - 'kplr002016978-2010078095331_llc.fits' saved [469440/469440]
+
+--2018-12-09 13:02:08--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/361/98/kplr002016978-2010078095331_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/361/98/kplr002016978-2010078095331_llc_lc.tbl [following]
+--2018-12-09 13:02:09--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/361/98/kplr002016978-2010078095331_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1421653 (1,4M) [text/plain]
+Saving to: 'kplr002016978-2010078095331_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 43,1K 31s
+    50K .......... .......... .......... .......... ..........  7% 85,8K 22s
+   100K .......... .......... .......... .......... .......... 10%  129K 18s
+   150K .......... .......... .......... .......... .......... 14%  256K 14s
+   200K .......... .......... .......... .......... .......... 18%  244K 12s
+   250K .......... .......... .......... .......... .......... 21%  258K 10s
+   300K .......... .......... .......... .......... .......... 25%  211K 9s
+   350K .......... .......... .......... .......... .......... 28%  260K 8s
+   400K .......... .......... .......... .......... .......... 32%  254K 7s
+   450K .......... .......... .......... .......... .......... 36%  258K 6s
+   500K .......... .......... .......... .......... .......... 39%  318K 6s
+   550K .......... .......... .......... .......... .......... 43%  262K 5s
+   600K .......... .......... .......... .......... .......... 46% 1,12M 4s
+   650K .......... .......... .......... .......... .......... 50%  323K 4s
+   700K .......... .......... .......... .......... .......... 54%  264K 4s
+   750K .......... .......... .......... .......... .......... 57%  235K 3s
+   800K .......... .......... .......... .......... .......... 61%  258K 3s
+   850K .......... .......... .......... .......... .......... 64% 1,55M 3s
+   900K .......... .......... .......... .......... .......... 68%  329K 2s
+   950K .......... .......... .......... .......... .......... 72% 1,17M 2s
+  1000K .......... .......... .......... .......... .......... 75%  317K 2s
+  1050K .......... .......... .......... .......... .......... 79% 1,23M 1s
+  1100K .......... .......... .......... .......... .......... 82%  317K 1s
+  1150K .......... .......... .......... .......... .......... 86% 1,52M 1s
+  1200K .......... .......... .......... .......... .......... 90%  312K 1s
+  1250K .......... .......... .......... .......... .......... 93% 1,40M 0s
+  1300K .......... .......... .......... .......... .......... 97%  320K 0s
+  1350K .......... .......... .......... ........             100% 11,8M=5,7s
+
+2018-12-09 13:02:15 (246 KB/s) - 'kplr002016978-2010078095331_llc_lc.tbl' saved [1421653/1421653]
+
+--2018-12-09 13:02:15--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/179/18/kplr002016978-2010174085026_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/179/18/kplr002016978-2010174085026_llc.fits [following]
+--2018-12-09 13:02:16--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/179/18/kplr002016978-2010174085026_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 492480 (481K) [image/x-fits]
+Saving to: 'kplr002016978-2010174085026_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 43,0K 10s
+    50K .......... .......... .......... .......... .......... 20% 85,6K 7s
+   100K .......... .......... .......... .......... .......... 31%  129K 5s
+   150K .......... .......... .......... .......... .......... 41%  127K 4s
+   200K .......... .......... .......... .......... .......... 51%  129K 3s
+   250K .......... .......... .......... .......... .......... 62%  249K 2s
+   300K .......... .......... .......... .......... .......... 72%  129K 1s
+   350K .......... .......... .......... .......... .......... 83%  257K 1s
+   400K .......... .......... .......... .......... .......... 93%  253K 0s
+   450K .......... .......... ..........                      100% 9,84M=3,9s
+
+2018-12-09 13:02:21 (123 KB/s) - 'kplr002016978-2010174085026_llc.fits' saved [492480/492480]
+
+--2018-12-09 13:02:21--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/195/82/kplr002016978-2010174085026_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/195/82/kplr002016978-2010174085026_llc_lc.tbl [following]
+--2018-12-09 13:02:21--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/195/82/kplr002016978-2010174085026_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1497967 (1,4M) [text/plain]
+Saving to: 'kplr002016978-2010174085026_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,3K 33s
+    50K .......... .......... .......... .......... ..........  6%  127K 21s
+   100K .......... .......... .......... .......... .......... 10% 85,8K 19s
+   150K .......... .......... .......... .......... .......... 13%  240K 15s
+   200K .......... .......... .......... .......... .......... 17%  130K 13s
+   250K .......... .......... .......... .......... .......... 20%  256K 11s
+   300K .......... .......... .......... .......... .......... 23%  126K 11s
+   350K .......... .......... .......... .......... .......... 27%  251K 9s
+   400K .......... .......... .......... .......... .......... 30%  124K 9s
+   450K .......... .......... .......... .......... .......... 34%  263K 8s
+   500K .......... .......... .......... .......... .......... 37%  256K 7s
+   550K .......... .......... .......... .......... .......... 41%  254K 7s
+   600K .......... .......... .......... .......... .......... 44%  225K 6s
+   650K .......... .......... .......... .......... .......... 47%  292K 5s
+   700K .......... .......... .......... .......... .......... 51%  243K 5s
+   750K .......... .......... .......... .......... .......... 54%  254K 4s
+   800K .......... .......... .......... .......... .......... 58%  252K 4s
+   850K .......... .......... .......... .......... .......... 61%  255K 4s
+   900K .......... .......... .......... .......... .......... 64%  261K 3s
+   950K .......... .......... .......... .......... .......... 68%  259K 3s
+  1000K .......... .......... .......... .......... .......... 71% 4,09M 2s
+  1050K .......... .......... .......... .......... .......... 75%  262K 2s
+  1100K .......... .......... .......... .......... .......... 78%  267K 2s
+  1150K .......... .......... .......... .......... .......... 82% 3,07M 1s
+  1200K .......... .......... .......... .......... .......... 85%  256K 1s
+  1250K .......... .......... .......... .......... .......... 88%  254K 1s
+  1300K .......... .......... .......... .......... .......... 92%  281K 1s
+  1350K .......... .......... .......... .......... .......... 95%  256K 0s
+  1400K .......... .......... .......... .......... .......... 99% 3,36M 0s
+  1450K .......... ..                                         100% 16,7M=7,3s
+
+2018-12-09 13:02:29 (201 KB/s) - 'kplr002016978-2010174085026_llc_lc.tbl' saved [1497967/1497967]
+
+--2018-12-09 13:02:30--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/378/98/kplr002016978-2010265121752_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/378/98/kplr002016978-2010265121752_llc.fits [following]
+--2018-12-09 13:02:30--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/378/98/kplr002016978-2010265121752_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 469440 (458K) [image/x-fits]
+Saving to: 'kplr002016978-2010265121752_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,3K 10s
+    50K .......... .......... .......... .......... .......... 21% 85,2K 6s
+   100K .......... .......... .......... .......... .......... 32%  127K 4s
+   150K .......... .......... .......... .......... .......... 43%  127K 3s
+   200K .......... .......... .......... .......... .......... 54%  128K 2s
+   250K .......... .......... .......... .......... .......... 65%  256K 2s
+   300K .......... .......... .......... .......... .......... 76%  129K 1s
+   350K .......... .......... .......... .......... .......... 87%  261K 1s
+   400K .......... .......... .......... .......... .......... 98%  130K 0s
+   450K ........                                              100% 6,16M=4,1s
+
+2018-12-09 13:02:35 (112 KB/s) - 'kplr002016978-2010265121752_llc.fits' saved [469440/469440]
+
+--2018-12-09 13:02:35--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/395/51/kplr002016978-2010265121752_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/395/51/kplr002016978-2010265121752_llc_lc.tbl [following]
+--2018-12-09 13:02:36--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/395/51/kplr002016978-2010265121752_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1421994 (1,4M) [text/plain]
+Saving to: 'kplr002016978-2010265121752_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,7K 31s
+    50K .......... .......... .......... .......... ..........  7%  126K 20s
+   100K .......... .......... .......... .......... .......... 10%  129K 16s
+   150K .......... .......... .......... .......... .......... 14%  126K 14s
+   200K .......... .......... .......... .......... .......... 18%  129K 12s
+   250K .......... .......... .......... .......... .......... 21%  258K 11s
+   300K .......... .......... .......... .......... .......... 25%  255K 9s
+   350K .......... .......... .......... .......... .......... 28%  251K 8s
+   400K .......... .......... .......... .......... .......... 32%  129K 8s
+   450K .......... .......... .......... .......... .......... 36%  258K 7s
+   500K .......... .......... .......... .......... .......... 39%  249K 6s
+   550K .......... .......... .......... .......... .......... 43%  259K 6s
+   600K .......... .......... .......... .......... .......... 46% 5,56M 5s
+   650K .......... .......... .......... .......... .......... 50%  252K 4s
+   700K .......... .......... .......... .......... .......... 54%  265K 4s
+   750K .......... .......... .......... .......... .......... 57% 3,91M 3s
+   800K .......... .......... .......... .......... .......... 61%  251K 3s
+   850K .......... .......... .......... .......... .......... 64%  264K 3s
+   900K .......... .......... .......... .......... .......... 68%  260K 2s
+   950K .......... .......... .......... .......... .......... 72%  261K 2s
+  1000K .......... .......... .......... .......... .......... 75% 4,51M 2s
+  1050K .......... .......... .......... .......... .......... 79%  271K 1s
+  1100K .......... .......... .......... .......... .......... 82% 4,25M 1s
+  1150K .......... .......... .......... .......... .......... 86%  262K 1s
+  1200K .......... .......... .......... .......... .......... 90%  268K 1s
+  1250K .......... .......... .......... .......... .......... 93% 4,06M 0s
+  1300K .......... .......... .......... .......... .......... 97%  276K 0s
+  1350K .......... .......... .......... ........             100% 3,26M=6,3s
+
+2018-12-09 13:02:43 (221 KB/s) - 'kplr002016978-2010265121752_llc_lc.tbl' saved [1421994/1421994]
+
+--2018-12-09 13:02:43--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/278/85/kplr002016978-2010355172524_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/278/85/kplr002016978-2010355172524_llc.fits [following]
+--2018-12-09 13:02:44--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/278/85/kplr002016978-2010355172524_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 466560 (456K) [image/x-fits]
+Saving to: 'kplr002016978-2010355172524_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,7K 10s
+    50K .......... .......... .......... .......... .......... 21% 85,5K 6s
+   100K .......... .......... .......... .......... .......... 32%  248K 4s
+   150K .......... .......... .......... .......... .......... 43%  128K 3s
+   200K .......... .......... .......... .......... .......... 54%  125K 2s
+   250K .......... .......... .......... .......... .......... 65% 86,7K 2s
+   300K .......... .......... .......... .......... .......... 76% 87,6K 1s
+   350K .......... .......... .......... .......... .......... 87%  256K 1s
+   400K .......... .......... .......... .......... .......... 98% 86,5K 0s
+   450K .....                                                 100% 36,6G=4,7s
+
+2018-12-09 13:02:49 (97,5 KB/s) - 'kplr002016978-2010355172524_llc.fits' saved [466560/466560]
+
+--2018-12-09 13:02:50--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/295/19/kplr002016978-2010355172524_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/295/19/kplr002016978-2010355172524_llc_lc.tbl [following]
+--2018-12-09 13:02:50--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/295/19/kplr002016978-2010355172524_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1414565 (1,3M) [text/plain]
+Saving to: 'kplr002016978-2010355172524_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 50,4K 26s
+    50K .......... .......... .......... .......... ..........  7% 85,5K 20s
+   100K .......... .......... .......... .......... .......... 10%  127K 16s
+   150K .......... .......... .......... .......... .......... 14%  246K 13s
+   200K .......... .......... .......... .......... .......... 18%  130K 12s
+   250K .......... .......... .......... .......... .......... 21%  246K 10s
+   300K .......... .......... .......... .......... .......... 25%  128K 9s
+   350K .......... .......... .......... .......... .......... 28%  253K 8s
+   400K .......... .......... .......... .......... .......... 32%  124K 8s
+   450K .......... .......... .......... .......... .......... 36%  269K 7s
+   500K .......... .......... .......... .......... .......... 39%  256K 6s
+   550K .......... .......... .......... .......... .......... 43%  256K 6s
+   600K .......... .......... .......... .......... .......... 47% 4,43M 5s
+   650K .......... .......... .......... .......... .......... 50%  254K 4s
+   700K .......... .......... .......... .......... .......... 54%  267K 4s
+   750K .......... .......... .......... .......... .......... 57%  253K 4s
+   800K .......... .......... .......... .......... .......... 61%  261K 3s
+   850K .......... .......... .......... .......... .......... 65% 3,86M 3s
+   900K .......... .......... .......... .......... .......... 68%  272K 2s
+   950K .......... .......... .......... .......... .......... 72%  255K 2s
+  1000K .......... .......... .......... .......... .......... 76% 8,99M 2s
+  1050K .......... .......... .......... .......... .......... 79%  254K 1s
+  1100K .......... .......... .......... .......... .......... 83% 12,9M 1s
+  1150K .......... .......... .......... .......... .......... 86%  260K 1s
+  1200K .......... .......... .......... .......... .......... 90% 8,94M 1s
+  1250K .......... .......... .......... .......... .......... 94%  261K 0s
+  1300K .......... .......... .......... .......... .......... 97%  255K 0s
+  1350K .......... .......... .......... .                    100% 12,0M=6,3s
+
+2018-12-09 13:02:57 (219 KB/s) - 'kplr002016978-2010355172524_llc_lc.tbl' saved [1414565/1414565]
+
+--2018-12-09 13:02:57--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/412/05/kplr002016978-2011073133259_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/412/05/kplr002016978-2011073133259_llc.fits [following]
+--2018-12-09 13:02:58--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/412/05/kplr002016978-2011073133259_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 357120 (349K) [image/x-fits]
+Saving to: 'kplr002016978-2011073133259_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 14% 42,7K 7s
+    50K .......... .......... .......... .......... .......... 28% 86,0K 4s
+   100K .......... .......... .......... .......... .......... 43%  128K 3s
+   150K .......... .......... .......... .......... .......... 57%  129K 2s
+   200K .......... .......... .......... .......... .......... 71%  254K 1s
+   250K .......... .......... .......... .......... .......... 86%  126K 1s
+   300K .......... .......... .......... .......... ........  100%  245K=3,3s
+
+2018-12-09 13:03:02 (105 KB/s) - 'kplr002016978-2011073133259_llc.fits' saved [357120/357120]
+
+--2018-12-09 13:03:03--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/428/83/kplr002016978-2011073133259_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/428/83/kplr002016978-2011073133259_llc_lc.tbl [following]
+--2018-12-09 13:03:03--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/428/83/kplr002016978-2011073133259_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1061661 (1,0M) [text/plain]
+Saving to: 'kplr002016978-2011073133259_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  4% 42,7K 23s
+    50K .......... .......... .......... .......... ..........  9% 83,8K 17s
+   100K .......... .......... .......... .......... .......... 14% 85,3K 14s
+   150K .......... .......... .......... .......... .......... 19%  210K 11s
+   200K .......... .......... .......... .......... .......... 24%  146K 9s
+   250K .......... .......... .......... .......... .......... 28%  205K 8s
+   300K .......... .......... .......... .......... .......... 33%  150K 7s
+   350K .......... .......... .......... .......... .......... 38%  259K 6s
+   400K .......... .......... .......... .......... .......... 43%  248K 5s
+   450K .......... .......... .......... .......... .......... 48%  270K 4s
+   500K .......... .......... .......... .......... .......... 53%  250K 4s
+   550K .......... .......... .......... .......... .......... 57%  251K 3s
+   600K .......... .......... .......... .......... .......... 62%  129K 3s
+   650K .......... .......... .......... .......... .......... 67% 42,4K 3s
+   700K .......... .......... .......... .......... .......... 72% 86,2K 3s
+   750K .......... .......... .......... .......... .......... 77% 86,3K 2s
+   800K .......... .......... .......... .......... .......... 81%  128K 2s
+   850K .......... .......... .......... .......... .......... 86%  130K 1s
+   900K .......... .......... .......... .......... .......... 91%  130K 1s
+   950K .......... .......... .......... .......... .......... 96%  256K 0s
+  1000K .......... .......... .......... ......               100%  190K=8,8s
+
+2018-12-09 13:03:13 (118 KB/s) - 'kplr002016978-2011073133259_llc_lc.tbl' saved [1061661/1061661]
+
+--2018-12-09 13:03:13--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/311/53/kplr002016978-2011177032512_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/311/53/kplr002016978-2011177032512_llc.fits [following]
+--2018-12-09 13:03:13--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/311/53/kplr002016978-2011177032512_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506880 (495K) [image/x-fits]
+Saving to: 'kplr002016978-2011177032512_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 43,0K 10s
+    50K .......... .......... .......... .......... .......... 20% 85,7K 7s
+   100K .......... .......... .......... .......... .......... 30%  128K 5s
+   150K .......... .......... .......... .......... .......... 40%  129K 4s
+   200K .......... .......... .......... .......... .......... 50%  253K 3s
+   250K .......... .......... .......... .......... .......... 60%  128K 2s
+   300K .......... .......... .......... .......... .......... 70%  258K 1s
+   350K .......... .......... .......... .......... .......... 80%  129K 1s
+   400K .......... .......... .......... .......... .......... 90% 85,0K 0s
+   450K .......... .......... .......... .......... .....     100% 46,2K=5,3s
+
+2018-12-09 13:03:20 (94,2 KB/s) - 'kplr002016978-2011177032512_llc.fits' saved [506880/506880]
+
+--2018-12-09 13:03:20--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/328/26/kplr002016978-2011177032512_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/328/26/kplr002016978-2011177032512_llc_lc.tbl [following]
+--2018-12-09 13:03:21--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/328/26/kplr002016978-2011177032512_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1541115 (1,5M) [text/plain]
+Saving to: 'kplr002016978-2011177032512_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,9K 34s
+    50K .......... .......... .......... .......... ..........  6% 85,2K 25s
+   100K .......... .......... .......... .......... ..........  9%  128K 19s
+   150K .......... .......... .......... .......... .......... 13%  251K 15s
+   200K .......... .......... .......... .......... .......... 16%  130K 14s
+   250K .......... .......... .......... .......... .......... 19%  251K 12s
+   300K .......... .......... .......... .......... .......... 23%  130K 11s
+   350K .......... .......... .......... .......... .......... 26%  255K 10s
+   400K .......... .......... .......... .......... .......... 29%  131K 9s
+   450K .......... .......... .......... .......... .......... 33% 4,77M 8s
+   500K .......... .......... .......... .......... .......... 36%  260K 7s
+   550K .......... .......... .......... .......... .......... 39%  259K 6s
+   600K .......... .......... .......... .......... .......... 43%  268K 6s
+   650K .......... .......... .......... .......... .......... 46%  253K 5s
+   700K .......... .......... .......... .......... .......... 49%  256K 5s
+   750K .......... .......... .......... .......... .......... 53% 4,06M 4s
+   800K .......... .......... .......... .......... .......... 56%  259K 4s
+   850K .......... .......... .......... .......... .......... 59%  261K 4s
+   900K .......... .......... .......... .......... .......... 63%  269K 3s
+   950K .......... .......... .......... .......... .......... 66% 4,56M 3s
+  1000K .......... .......... .......... .......... .......... 69%  255K 2s
+  1050K .......... .......... .......... .......... .......... 73%  256K 2s
+  1100K .......... .......... .......... .......... .......... 76% 11,8M 2s
+  1150K .......... .......... .......... .......... .......... 79%  258K 2s
+  1200K .......... .......... .......... .......... .......... 83%  261K 1s
+  1250K .......... .......... .......... .......... .......... 86% 7,31M 1s
+  1300K .......... .......... .......... .......... .......... 89%  267K 1s
+  1350K .......... .......... .......... .......... .......... 93% 5,64M 0s
+  1400K .......... .......... .......... .......... .......... 96%  273K 0s
+  1450K .......... .......... .......... .......... .......... 99% 4,28M 0s
+  1500K ....                                                  100% 21,6M=6,6s
+
+2018-12-09 13:03:28 (227 KB/s) - 'kplr002016978-2011177032512_llc_lc.tbl' saved [1541115/1541115]
+
+--2018-12-09 13:03:28--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/445/62/kplr002016978-2011271113734_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/445/62/kplr002016978-2011271113734_llc.fits [following]
+--2018-12-09 13:03:29--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/445/62/kplr002016978-2011271113734_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 486720 (475K) [image/x-fits]
+Saving to: 'kplr002016978-2011271113734_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,7K 10s
+    50K .......... .......... .......... .......... .......... 21% 86,4K 7s
+   100K .......... .......... .......... .......... .......... 31%  127K 5s
+   150K .......... .......... .......... .......... .......... 42%  256K 3s
+   200K .......... .......... .......... .......... .......... 52%  125K 2s
+   250K .......... .......... .......... .......... .......... 63%  130K 2s
+   300K .......... .......... .......... .......... .......... 73%  257K 1s
+   350K .......... .......... .......... .......... .......... 84%  129K 1s
+   400K .......... .......... .......... .......... .......... 94%  128K 0s
+   450K .......... .......... .....                           100% 14,5M=4,1s
+
+2018-12-09 13:03:34 (116 KB/s) - 'kplr002016978-2011271113734_llc.fits' saved [486720/486720]
+
+--2018-12-09 13:03:34--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/462/32/kplr002016978-2011271113734_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/462/32/kplr002016978-2011271113734_llc_lc.tbl [following]
+--2018-12-09 13:03:35--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/462/32/kplr002016978-2011271113734_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1478331 (1,4M) [text/plain]
+Saving to: 'kplr002016978-2011271113734_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 43,0K 32s
+    50K .......... .......... .......... .......... ..........  6% 85,1K 24s
+   100K .......... .......... .......... .......... .......... 10%  128K 18s
+   150K .......... .......... .......... .......... .......... 13%  128K 16s
+   200K .......... .......... .......... .......... .......... 17%  253K 13s
+   250K .......... .......... .......... .......... .......... 20%  251K 11s
+   300K .......... .......... .......... .......... .......... 24%  261K 10s
+   350K .......... .......... .......... .......... .......... 27%  256K 9s
+   400K .......... .......... .......... .......... .......... 31%  130K 8s
+   450K .......... .......... .......... .......... .......... 34%  255K 7s
+   500K .......... .......... .......... .......... .......... 38%  255K 7s
+   550K .......... .......... .......... .......... .......... 41%  260K 6s
+   600K .......... .......... .......... .......... .......... 45% 8,14M 5s
+   650K .......... .......... .......... .......... .......... 48%  261K 5s
+   700K .......... .......... .......... .......... .......... 51%  256K 4s
+   750K .......... .......... .......... .......... .......... 55% 4,38M 4s
+   800K .......... .......... .......... .......... .......... 58%  260K 3s
+   850K .......... .......... .......... .......... .......... 62%  260K 3s
+   900K .......... .......... .......... .......... .......... 65%  264K 3s
+   950K .......... .......... .......... .......... .......... 69% 8,95M 2s
+  1000K .......... .......... .......... .......... .......... 72%  262K 2s
+  1050K .......... .......... .......... .......... .......... 76%  262K 2s
+  1100K .......... .......... .......... .......... .......... 79% 8,48M 1s
+  1150K .......... .......... .......... .......... .......... 83% 6,96M 1s
+  1200K .......... .......... .......... .......... .......... 86%  261K 1s
+  1250K .......... .......... .......... .......... .......... 90%  267K 1s
+  1300K .......... .......... .......... .......... .......... 93% 5,02M 0s
+  1350K .......... .......... .......... .......... .......... 96%  264K 0s
+  1400K .......... .......... .......... .......... ...       100% 4,19M=6,3s
+
+2018-12-09 13:03:42 (231 KB/s) - 'kplr002016978-2011271113734_llc_lc.tbl' saved [1478331/1478331]
+
+--2018-12-09 13:03:42--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/479/01/kplr002016978-2012004120508_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/479/01/kplr002016978-2012004120508_llc.fits [following]
+--2018-12-09 13:03:42--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/479/01/kplr002016978-2012004120508_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506880 (495K) [image/x-fits]
+Saving to: 'kplr002016978-2012004120508_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,5K 10s
+    50K .......... .......... .......... .......... .......... 20%  106K 7s
+   100K .......... .......... .......... .......... .......... 30%  164K 4s
+   150K .......... .......... .......... .......... .......... 40%  127K 3s
+   200K .......... .......... .......... .......... .......... 50%  256K 2s
+   250K .......... .......... .......... .......... .......... 60% 51,2K 2s
+   300K .......... .......... .......... .......... .......... 70% 51,6K 2s
+   350K .......... .......... .......... .......... .......... 80% 86,0K 1s
+   400K .......... .......... .......... .......... .......... 90%  116K 1s
+   450K .......... .......... .......... .......... .....     100%  229K=5,7s
+
+2018-12-09 13:03:49 (86,9 KB/s) - 'kplr002016978-2012004120508_llc.fits' saved [506880/506880]
+
+--2018-12-09 13:03:49--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/495/43/kplr002016978-2012004120508_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/495/43/kplr002016978-2012004120508_llc_lc.tbl [following]
+--2018-12-09 13:03:50--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/495/43/kplr002016978-2012004120508_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1536627 (1,5M) [text/plain]
+Saving to: 'kplr002016978-2012004120508_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,6K 34s
+    50K .......... .......... .......... .......... ..........  6% 82,5K 25s
+   100K .......... .......... .......... .......... ..........  9%  124K 20s
+   150K .......... .......... .......... .......... .......... 13%  128K 17s
+   200K .......... .......... .......... .......... .......... 16%  124K 15s
+   250K .......... .......... .......... .......... .......... 19% 43,2K 17s
+   300K .......... .......... .......... .......... .......... 23% 61,3K 16s
+   350K .......... .......... .......... .......... .......... 26%  126K 15s
+   400K .......... .......... .......... .......... .......... 29% 84,5K 14s
+   450K .......... .......... .......... .......... .......... 33%  123K 13s
+   500K .......... .......... .......... .......... .......... 36%  120K 12s
+   550K .......... .......... .......... .......... .......... 39% 83,8K 11s
+   600K .......... .......... .......... .......... .......... 43%  128K 10s
+   650K .......... .......... .......... .......... .......... 46%  128K 9s
+   700K .......... .......... .......... .......... .......... 49%  126K 9s
+   750K .......... .......... .......... .......... .......... 53%  128K 8s
+   800K .......... .......... .......... .......... .......... 56% 85,3K 7s
+   850K .......... .......... .......... .......... .......... 59%  125K 7s
+   900K .......... .......... .......... .......... .......... 63%  126K 6s
+   950K .......... .......... .......... .......... .......... 66%  127K 5s
+  1000K .......... .......... .......... .......... .......... 69%  127K 5s
+  1050K .......... .......... .......... .......... .......... 73%  127K 4s
+  1100K .......... .......... .......... .......... .......... 76%  128K 4s
+  1150K .......... .......... .......... .......... .......... 79% 84,6K 3s
+  1200K .......... .......... .......... .......... .......... 83%  127K 3s
+  1250K .......... .......... .......... .......... .......... 86%  129K 2s
+  1300K .......... .......... .......... .......... .......... 89%  128K 2s
+  1350K .......... .......... .......... .......... .......... 93% 85,6K 1s
+  1400K .......... .......... .......... .......... .......... 96%  127K 1s
+  1450K .......... .......... .......... .......... .......... 99%  211K 0s
+  1500K                                                       100% 3,98G=15s
+
+2018-12-09 13:04:06 (101 KB/s) - 'kplr002016978-2012004120508_llc_lc.tbl' saved [1536627/1536627]
+
+--2018-12-09 13:04:06--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/511/84/kplr002016978-2012088054726_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/511/84/kplr002016978-2012088054726_llc.fits [following]
+--2018-12-09 13:04:06--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/511/84/kplr002016978-2012088054726_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 434880 (425K) [image/x-fits]
+Saving to: 'kplr002016978-2012088054726_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 11% 43,0K 9s
+    50K .......... .......... .......... .......... .......... 23% 85,3K 6s
+   100K .......... .......... .......... .......... .......... 35%  117K 4s
+   150K .......... .......... .......... .......... .......... 47%  140K 3s
+   200K .......... .......... .......... .......... .......... 58%  129K 2s
+   250K .......... .......... .......... .......... .......... 70%  128K 1s
+   300K .......... .......... .......... .......... .......... 82%  251K 1s
+   350K .......... .......... .......... .......... .......... 94%  256K 0s
+   400K .......... .......... ....                            100%  125K=3,9s
+
+2018-12-09 13:04:11 (109 KB/s) - 'kplr002016978-2012088054726_llc.fits' saved [434880/434880]
+
+--2018-12-09 13:04:11--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/528/54/kplr002016978-2012088054726_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/528/54/kplr002016978-2012088054726_llc_lc.tbl [following]
+--2018-12-09 13:04:11--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/528/54/kplr002016978-2012088054726_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1307978 (1,2M) [text/plain]
+Saving to: 'kplr002016978-2012088054726_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,8K 29s
+    50K .......... .......... .......... .......... ..........  7% 85,8K 21s
+   100K .......... .......... .......... .......... .......... 11%  207K 15s
+   150K .......... .......... .......... .......... .......... 15%  129K 13s
+   200K .......... .......... .......... .......... .......... 19%  250K 11s
+   250K .......... .......... .......... .......... .......... 23%  130K 10s
+   300K .......... .......... .......... .......... .......... 27%  257K 8s
+   350K .......... .......... .......... .......... .......... 31%  252K 7s
+   400K .......... .......... .......... .......... .......... 35%  130K 7s
+   450K .......... .......... .......... .......... .......... 39%  255K 6s
+   500K .......... .......... .......... .......... .......... 43%  259K 5s
+   550K .......... .......... .......... .......... .......... 46% 10,2M 5s
+   600K .......... .......... .......... .......... .......... 50%  253K 4s
+   650K .......... .......... .......... .......... .......... 54%  266K 4s
+   700K .......... .......... .......... .......... .......... 58% 3,23M 3s
+   750K .......... .......... .......... .......... .......... 62%  263K 3s
+   800K .......... .......... .......... .......... .......... 66%  260K 2s
+   850K .......... .......... .......... .......... .......... 70%  256K 2s
+   900K .......... .......... .......... .......... .......... 74%  264K 2s
+   950K .......... .......... .......... .......... .......... 78% 4,78M 1s
+  1000K .......... .......... .......... .......... .......... 82%  265K 1s
+  1050K .......... .......... .......... .......... .......... 86% 7,51M 1s
+  1100K .......... .......... .......... .......... .......... 90%  267K 1s
+  1150K .......... .......... .......... .......... .......... 93% 5,25M 0s
+  1200K .......... .......... .......... .......... .......... 97%  272K 0s
+  1250K .......... .......... .......                         100% 2,28M=5,9s
+
+2018-12-09 13:04:18 (216 KB/s) - 'kplr002016978-2012088054726_llc_lc.tbl' saved [1307978/1307978]
+
+--2018-12-09 13:04:18--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/545/23/kplr002016978-2012179063303_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/545/23/kplr002016978-2012179063303_llc.fits [following]
+--2018-12-09 13:04:19--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/545/23/kplr002016978-2012179063303_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 472320 (461K) [image/x-fits]
+Saving to: 'kplr002016978-2012179063303_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,7K 10s
+    50K .......... .......... .......... .......... .......... 21% 82,3K 6s
+   100K .......... .......... .......... .......... .......... 32% 36,7K 7s
+   150K .......... .......... .......... .......... .......... 43% 64,4K 5s
+   200K .......... .......... .......... .......... .......... 54% 86,2K 4s
+   250K .......... .......... .......... .......... .......... 65%  129K 3s
+   300K .......... .......... .......... .......... .......... 75%  128K 2s
+   350K .......... .......... .......... .......... .......... 86% 86,3K 1s
+   400K .......... .......... .......... .......... .......... 97% 85,9K 0s
+   450K .......... .                                          100% 14,4M=6,4s
+
+2018-12-09 13:04:26 (71,7 KB/s) - 'kplr002016978-2012179063303_llc.fits' saved [472320/472320]
+
+--2018-12-09 13:04:26--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/561/90/kplr002016978-2012179063303_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/561/90/kplr002016978-2012179063303_llc_lc.tbl [following]
+--2018-12-09 13:04:27--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/561/90/kplr002016978-2012179063303_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1429385 (1,4M) [text/plain]
+Saving to: 'kplr002016978-2012179063303_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 43,2K 31s
+    50K .......... .......... .......... .......... ..........  7% 86,6K 22s
+   100K .......... .......... .......... .......... .......... 10%  130K 18s
+   150K .......... .......... .......... .......... .......... 14%  258K 14s
+   200K .......... .......... .......... .......... .......... 17%  128K 12s
+   250K .......... .......... .......... .......... .......... 21% 51,8K 13s
+   300K .......... .......... .......... .......... .......... 25%  129K 12s
+   350K .......... .......... .......... .......... .......... 28% 86,9K 12s
+   400K .......... .......... .......... .......... .......... 32% 84,7K 11s
+   450K .......... .......... .......... .......... .......... 35% 42,8K 11s
+   500K .......... .......... .......... .......... .......... 39% 63,6K 11s
+   550K .......... .......... .......... .......... .......... 42%  128K 10s
+   600K .......... .......... .......... .......... .......... 46% 85,7K 9s
+   650K .......... .......... .......... .......... .......... 50% 42,8K 9s
+   700K .......... .......... .......... .......... .......... 53% 86,4K 9s
+   750K .......... .......... .......... .......... .......... 57% 86,0K 8s
+   800K .......... .......... .......... .......... .......... 60% 65,0K 7s
+   850K .......... .......... .......... .......... .......... 64% 86,8K 7s
+   900K .......... .......... .......... .......... .......... 68% 85,9K 6s
+   950K .......... .......... .......... .......... .......... 71%  127K 5s
+  1000K .......... .......... .......... .......... .......... 75%  129K 4s
+  1050K .......... .......... .......... .......... .......... 78% 85,1K 4s
+  1100K .......... .......... .......... .......... .......... 82%  129K 3s
+  1150K .......... .......... .......... .......... .......... 85% 85,7K 2s
+  1200K .......... .......... .......... .......... .......... 89% 85,7K 2s
+  1250K .......... .......... .......... .......... .......... 93%  128K 1s
+  1300K .......... .......... .......... .......... .......... 96%  130K 1s
+  1350K .......... .......... .......... .......... .....     100%  119K=16s
+
+2018-12-09 13:04:44 (84,7 KB/s) - 'kplr002016978-2012179063303_llc_lc.tbl' saved [1429385/1429385]
+
+--2018-12-09 13:04:44--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/578/58/kplr002016978-2012277125453_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/578/58/kplr002016978-2012277125453_llc.fits [following]
+--2018-12-09 13:04:45--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/578/58/kplr002016978-2012277125453_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506880 (495K) [image/x-fits]
+Saving to: 'kplr002016978-2012277125453_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,7K 10s
+    50K .......... .......... .......... .......... .......... 20% 86,2K 7s
+   100K .......... .......... .......... .......... .......... 30%  128K 5s
+   150K .......... .......... .......... .......... .......... 40%  126K 4s
+   200K .......... .......... .......... .......... .......... 50%  130K 3s
+   250K .......... .......... .......... .......... .......... 60%  129K 2s
+   300K .......... .......... .......... .......... .......... 70%  258K 1s
+   350K .......... .......... .......... .......... .......... 80%  130K 1s
+   400K .......... .......... .......... .......... .......... 90%  254K 0s
+   450K .......... .......... .......... .......... .....     100%  234K=4,3s
+
+2018-12-09 13:04:50 (116 KB/s) - 'kplr002016978-2012277125453_llc.fits' saved [506880/506880]
+
+--2018-12-09 13:04:50--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/595/28/kplr002016978-2012277125453_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/595/28/kplr002016978-2012277125453_llc_lc.tbl [following]
+--2018-12-09 13:04:51--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/595/28/kplr002016978-2012277125453_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1537589 (1,5M) [text/plain]
+Saving to: 'kplr002016978-2012277125453_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,9K 34s
+    50K .......... .......... .......... .......... ..........  6% 85,8K 25s
+   100K .......... .......... .......... .......... ..........  9%  128K 19s
+   150K .......... .......... .......... .......... .......... 13%  128K 16s
+   200K .......... .......... .......... .......... .......... 16%  128K 15s
+   250K .......... .......... .......... .......... .......... 19%  128K 13s
+   300K .......... .......... .......... .......... .......... 23%  255K 12s
+   350K .......... .......... .......... .......... .......... 26%  127K 11s
+   400K .......... .......... .......... .......... .......... 29%  129K 10s
+   450K .......... .......... .......... .......... .......... 33%  257K 9s
+   500K .......... .......... .......... .......... .......... 36%  129K 8s
+   550K .......... .......... .......... .......... .......... 39%  254K 8s
+   600K .......... .......... .......... .......... .......... 43%  257K 7s
+   650K .......... .......... .......... .......... .......... 46%  253K 6s
+   700K .......... .......... .......... .......... .......... 49% 6,77M 5s
+   750K .......... .......... .......... .......... .......... 53%  255K 5s
+   800K .......... .......... .......... .......... .......... 56%  257K 4s
+   850K .......... .......... .......... .......... .......... 59%  252K 4s
+   900K .......... .......... .......... .......... .......... 63% 12,0M 4s
+   950K .......... .......... .......... .......... .......... 66%  251K 3s
+  1000K .......... .......... .......... .......... .......... 69%  258K 3s
+  1050K .......... .......... .......... .......... .......... 73%  255K 2s
+  1100K .......... .......... .......... .......... .......... 76% 10,8M 2s
+  1150K .......... .......... .......... .......... .......... 79%  259K 2s
+  1200K .......... .......... .......... .......... .......... 83%  253K 1s
+  1250K .......... .......... .......... .......... .......... 86% 11,8M 1s
+  1300K .......... .......... .......... .......... .......... 89%  256K 1s
+  1350K .......... .......... .......... .......... .......... 93%  257K 1s
+  1400K .......... .......... .......... .......... .......... 96% 11,5M 0s
+  1450K .......... .......... .......... .......... .......... 99%  259K 0s
+  1500K .                                                     100% 10,1G=7,6s
+
+2018-12-09 13:04:59 (197 KB/s) - 'kplr002016978-2012277125453_llc_lc.tbl' saved [1537589/1537589]
+
+--2018-12-09 13:04:59--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/611/97/kplr002016978-2013011073258_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/611/97/kplr002016978-2013011073258_llc.fits [following]
+--2018-12-09 13:05:00--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/611/97/kplr002016978-2013011073258_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506880 (495K) [image/x-fits]
+Saving to: 'kplr002016978-2013011073258_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 10% 42,4K 10s
+    50K .......... .......... .......... .......... .......... 20% 85,7K 7s
+   100K .......... .......... .......... .......... .......... 30%  129K 5s
+   150K .......... .......... .......... .......... .......... 40%  129K 4s
+   200K .......... .......... .......... .......... .......... 50%  252K 3s
+   250K .......... .......... .......... .......... .......... 60%  127K 2s
+   300K .......... .......... .......... .......... .......... 70%  251K 1s
+   350K .......... .......... .......... .......... .......... 80%  128K 1s
+   400K .......... .......... .......... .......... .......... 90%  128K 0s
+   450K .......... .......... .......... .......... .....     100% 9,58M=4,1s
+
+2018-12-09 13:05:05 (120 KB/s) - 'kplr002016978-2013011073258_llc.fits' saved [506880/506880]
+
+--2018-12-09 13:05:05--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/628/45/kplr002016978-2013011073258_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/628/45/kplr002016978-2013011073258_llc_lc.tbl [following]
+--2018-12-09 13:05:06--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/628/45/kplr002016978-2013011073258_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1545001 (1,5M) [text/plain]
+Saving to: 'kplr002016978-2013011073258_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,5K 34s
+    50K .......... .......... .......... .......... ..........  6% 85,8K 25s
+   100K .......... .......... .......... .......... ..........  9%  129K 19s
+   150K .......... .......... .......... .......... .......... 13%  251K 15s
+   200K .......... .......... .......... .......... .......... 16%  131K 14s
+   250K .......... .......... .......... .......... .......... 19%  127K 13s
+   300K .......... .......... .......... .......... .......... 23%  252K 11s
+   350K .......... .......... .......... .......... .......... 26%  129K 10s
+   400K .......... .......... .......... .......... .......... 29%  252K 9s
+   450K .......... .......... .......... .......... .......... 33%  251K 8s
+   500K .......... .......... .......... .......... .......... 36%  253K 8s
+   550K .......... .......... .......... .......... .......... 39%  250K 7s
+   600K .......... .......... .......... .......... .......... 43%  255K 6s
+   650K .......... .......... .......... .......... .......... 46%  243K 6s
+   700K .......... .......... .......... .......... .......... 49%  267K 5s
+   750K .......... .......... .......... .......... .......... 53%  258K 5s
+   800K .......... .......... .......... .......... .......... 56%  254K 4s
+   850K .......... .......... .......... .......... .......... 59%  260K 4s
+   900K .......... .......... .......... .......... .......... 62% 7,23M 3s
+   950K .......... .......... .......... .......... .......... 66%  257K 3s
+  1000K .......... .......... .......... .......... .......... 69%  263K 3s
+  1050K .......... .......... .......... .......... .......... 72%  258K 2s
+  1100K .......... .......... .......... .......... .......... 76% 12,6M 2s
+  1150K .......... .......... .......... .......... .......... 79%  254K 2s
+  1200K .......... .......... .......... .......... .......... 82%  255K 1s
+  1250K .......... .......... .......... .......... .......... 86%  264K 1s
+  1300K .......... .......... .......... .......... .......... 89%  258K 1s
+  1350K .......... .......... .......... .......... .......... 92% 7,91M 1s
+  1400K .......... .......... .......... .......... .......... 96%  262K 0s
+  1450K .......... .......... .......... .......... .......... 99% 4,68M 0s
+  1500K ........                                              100% 48,1K=7,4s
+
+2018-12-09 13:05:14 (203 KB/s) - 'kplr002016978-2013011073258_llc_lc.tbl' saved [1545001/1545001]
+
+--2018-12-09 13:05:14--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/644/92/kplr002016978-2013098041711_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/644/92/kplr002016978-2013098041711_llc.fits [following]
+--2018-12-09 13:05:14--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/644/92/kplr002016978-2013098041711_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 449280 (439K) [image/x-fits]
+Saving to: 'kplr002016978-2013098041711_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 11% 42,8K 9s
+    50K .......... .......... .......... .......... .......... 22%  116K 5s
+   100K .......... .......... .......... .......... .......... 34% 91,5K 4s
+   150K .......... .......... .......... .......... .......... 45%  128K 3s
+   200K .......... .......... .......... .......... .......... 56%  255K 2s
+   250K .......... .......... .......... .......... .......... 68%  130K 1s
+   300K .......... .......... .......... .......... .......... 79%  240K 1s
+   350K .......... .......... .......... .......... .......... 91%  246K 0s
+   400K .......... .......... .......... ........             100%  186K=3,7s
+
+2018-12-09 13:05:19 (117 KB/s) - 'kplr002016978-2013098041711_llc.fits' saved [449280/449280]
+
+--2018-12-09 13:05:19--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/661/68/kplr002016978-2013098041711_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/661/68/kplr002016978-2013098041711_llc_lc.tbl [following]
+--2018-12-09 13:05:20--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/661/68/kplr002016978-2013098041711_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1359178 (1,3M) [text/plain]
+Saving to: 'kplr002016978-2013098041711_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... ..........  3% 42,9K 30s
+    50K .......... .......... .......... .......... ..........  7% 85,0K 22s
+   100K .......... .......... .......... .......... .......... 11%  128K 17s
+   150K .......... .......... .......... .......... .......... 15%  129K 14s
+   200K .......... .......... .......... .......... .......... 18%  253K 12s
+   250K .......... .......... .......... .......... .......... 22%  130K 11s
+   300K .......... .......... .......... .......... .......... 26%  253K 9s
+   350K .......... .......... .......... .......... .......... 30%  255K 8s
+   400K .......... .......... .......... .......... .......... 33%  257K 7s
+   450K .......... .......... .......... .......... .......... 37%  131K 7s
+   500K .......... .......... .......... .......... .......... 41%  259K 6s
+   550K .......... .......... .......... .......... .......... 45%  259K 5s
+   600K .......... .......... .......... .......... .......... 48% 6,12M 5s
+   650K .......... .......... .......... .......... .......... 52%  257K 4s
+   700K .......... .......... .......... .......... .......... 56%  270K 4s
+   750K .......... .......... .......... .......... .......... 60%  261K 3s
+   800K .......... .......... .......... .......... .......... 64% 3,67M 3s
+   850K .......... .......... .......... .......... .......... 67%  261K 2s
+   900K .......... .......... .......... .......... .......... 71%  273K 2s
+   950K .......... .......... .......... .......... .......... 75% 3,46M 2s
+  1000K .......... .......... .......... .......... .......... 79%  258K 1s
+  1050K .......... .......... .......... .......... .......... 82%  257K 1s
+  1100K .......... .......... .......... .......... .......... 86%  251K 1s
+  1150K .......... .......... .......... .......... .......... 90% 13,9M 1s
+  1200K .......... .......... .......... .......... .......... 94% 65,0K 0s
+  1250K .......... .......... .......... .......... .......... 97%  131K 0s
+  1300K .......... .......... .......                         100%  843K=7,2s
+
+2018-12-09 13:05:28 (184 KB/s) - 'kplr002016978-2013098041711_llc_lc.tbl' saved [1359178/1359178]
+
+--2018-12-09 13:05:28--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/678/43/kplr002016978-2013131215648_llc.fits
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/678/43/kplr002016978-2013131215648_llc.fits [following]
+--2018-12-09 13:05:29--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/678/43/kplr002016978-2013131215648_llc.fits
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 187200 (183K) [image/x-fits]
+Saving to: 'kplr002016978-2013131215648_llc.fits'
+
+     0K .......... .......... .......... .......... .......... 27% 42,6K 3s
+    50K .......... .......... .......... .......... .......... 54% 85,6K 1s
+   100K .......... .......... .......... .......... .......... 82%  127K 0s
+   150K .......... .......... .......... ..                   100%  166K=2,3s
+
+2018-12-09 13:05:32 (77,9 KB/s) - 'kplr002016978-2013131215648_llc.fits' saved [187200/187200]
+
+--2018-12-09 13:05:32--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/695/19/kplr002016978-2013131215648_llc_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/695/19/kplr002016978-2013131215648_llc_lc.tbl [following]
+--2018-12-09 13:05:33--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//Kepler/005/695/19/kplr002016978-2013131215648_llc_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 506677 (495K) [text/plain]
+Saving to: 'kplr002016978-2013131215648_llc_lc.tbl'
+
+     0K .......... .......... .......... .......... .......... 10% 43,0K 10s
+    50K .......... .......... .......... .......... .......... 20% 85,2K 7s
+   100K .......... .......... .......... .......... .......... 30%  127K 5s
+   150K .......... .......... .......... .......... .......... 40%  252K 3s
+   200K .......... .......... .......... .......... .......... 50%  130K 3s
+   250K .......... .......... .......... .......... .......... 60%  253K 2s
+   300K .......... .......... .......... .......... .......... 70%  129K 1s
+   350K .......... .......... .......... .......... .......... 80%  247K 1s
+   400K .......... .......... .......... .......... .......... 90%  125K 0s
+   450K .......... .......... .......... .......... ....      100% 6,80M=3,9s
+
+2018-12-09 13:05:38 (126 KB/s) - 'kplr002016978-2013131215648_llc_lc.tbl' saved [506677/506677]
+

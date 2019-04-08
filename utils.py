@@ -2,39 +2,77 @@ import os
 import pandas as pd
 import seaborn as sns
 import numpy as np
+import copy
 import matplotlib.pyplot as plt
 from astropy.io import ascii
 from scipy import optimize
 
+''' Constants with the column names '''
+col = ['SAP_FLUX','PDCSAP_FLUX']
+ecol = ['SAP_FLUX_ERR','PDCSAP_FLUX_ERR']
+col2 = ['F','FPDC']   # Names for the modified columns.
+ecol2 = ['EF','EFPDC']
+
 sns.set()
 def read_data(folder_path):
+    """
+    Read and process all the kepler data inside a folder based on the path provided
+
+    folder_path: path of the folder containing the data filenames
+
+    returns:
+
+    df_array: array with data frames for each quarter
+    periods: array with the period calculated with raw data for each quarter
+    periods_normalized: array with the period calculated with raw data for each quarter
+    """
+    periods = []
+    df_array = []
     filenames = os.listdir(folder_path)
     for filename in filenames:
         if(filename.endswith('.tbl')):
-            first_file = filename
-            break
-
-    df_data = ascii.read(folder_path + first_file).to_pandas()
-
-    for filename in filenames:
-        if(filename.endswith('.tbl') and not filename == first_file):
             data = ascii.read(folder_path + filename).to_pandas()
-            df_data = df_data.append(data)
+            data = data[['TIME','SAP_FLUX','PDCSAP_FLUX','SAP_FLUX_ERR','PDCSAP_FLUX_ERR','CADENCENO']].dropna()
+            data = normalize_data(data)
 
-    return df_data
+            remove_noise(data, data.PDCSAP_FLUX,'PDC_RAW_MEDIAN')
+            remove_noise(data, data.FPDC,'PDC_NORM_MEDIAN')
+
+            res = get_signal_parameters(data.dropna().TIME, data.dropna().PDC_RAW_MEDIAN)
+            periods = np.append(periods, res["period"])
+
+            df_array = np.append(df_array, data)
+
+    return {"df_array": df_array, "periods": periods}
+
+def normalize_data(data):
+    r = copy.deepcopy(data)
+    for c,ec,c2,ec2 in zip(col,ecol,col2,ecol2):
+        medf = np.median(r[c])
+        norm = r[c] / medf - 1
+        enorm = r[ec] / medf
+        r[c2] = norm
+        r[ec2] = enorm
+    return r
 
 def plot_data(data_x, data_y, label_x='Time', label_y='Flux', title=''):
     plt.figure(1,dpi=300)
     sns.lineplot(data_x, data_y)
-    plt.xlabel('Time')
-    plt.ylabel('Flux')
+    plt.xlabel(label_x)
+    plt.ylabel(label_y)
     plt.title(title)
     plt.show()
 
-def remove_noise(df,data):
-    df['MEDIAN'] = data.rolling(10).median()
+def remove_noise(df,data,col_name='MEDIAN'):
+    """
+    inputs:
+    df: dataframe containing the data
+    data: data to be adjusted
+    field_name: name of the column to be added to the dataframe
+    """
+    df[col_name] = data.rolling(10).median()
 
-def fit_sin(tt, yy):
+def get_signal_parameters(tt, yy):
     '''Fit sin to the input time sequence, and return fitting parameters "amp", "omega", "phase", "offset", "freq", "period" and "fitfunc"'''
     tt = np.array(tt)
     yy = np.array(yy)

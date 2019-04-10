@@ -22,12 +22,11 @@ def read_data(folder_path):
 
     returns:
 
-    df_array: array with data frames for each quarter
-    periods: array with the period calculated with raw data for each quarter
-    periods_normalized: array with the period calculated with raw data for each quarter
+    df_list: list with data frames for each quarter
+    periods: list with the period calculated with raw data for each quarter
     """
     periods = []
-    df_array = []
+    df_list = []
     filenames = os.listdir(folder_path)
     for filename in filenames:
         if(filename.endswith('.tbl')):
@@ -41,9 +40,9 @@ def read_data(folder_path):
             res = get_signal_parameters(data.dropna().TIME, data.dropna().PDC_RAW_MEDIAN)
             periods = np.append(periods, res["period"])
 
-            df_array = np.append(df_array, data)
+            df_list.append(data)
 
-    return {"df_array": df_array, "periods": periods}
+    return {"df_list": df_list, "periods": periods}
 
 def normalize_data(data):
     r = copy.deepcopy(data)

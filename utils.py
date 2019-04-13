@@ -6,6 +6,10 @@ import copy
 import matplotlib.pyplot as plt
 from astropy.io import ascii
 from scipy import optimize
+from collections import Counter
+from itertools import groupby
+from statistics import mode
+from statistics import median
 
 ''' Constants with the column names '''
 col = ['SAP_FLUX','PDCSAP_FLUX']
@@ -23,7 +27,7 @@ def read_data(folder_path):
     returns:
 
     df_list: list with data frames for each quarter
-    periods: list with the period calculated with raw data for each quarter
+    period: estimated rotation period of the star
     """
     periods = []
     df_list = []
@@ -38,11 +42,12 @@ def read_data(folder_path):
             remove_noise(data, data.FPDC,'PDC_NORM_MEDIAN')
 
             res = get_signal_parameters(data.dropna().TIME, data.dropna().PDC_RAW_MEDIAN)
-            periods = np.append(periods, res["period"])
+            periods.append(res["period"])
 
             df_list.append(data)
 
-    return {"df_list": df_list, "periods": periods}
+    period = get_period(periods)
+    return {"df_list": df_list, "period": period}
 
 def normalize_data(data):
     r = copy.deepcopy(data)
@@ -88,3 +93,27 @@ def get_signal_parameters(tt, yy):
     f = w/(2.*np.pi)
     fitfunc = lambda t: A * np.sin(w*t + p) + c
     return {"amp": A, "omega": w, "phase": p, "offset": c, "freq": f, "period": 1./f, "fitfunc": fitfunc, "maxcov": np.max(pcov), "rawres": (guess,popt,pcov)}
+
+def round_elements(list, n_places):
+    return [ round(elem, n_places) for elem in list ]
+
+def remove_outliers(list):
+    mean = np.mean(list, axis=0)
+    sd = np.std(list, axis=0)
+    new_list = [x for x in list if (x > mean - 2 * sd)]
+    new_list = [x for x in new_list if (x < mean + 2*sd)]
+    return new_list
+
+def get_period(list):
+    periods = round_elements(list,3)
+    periods = remove_outliers(periods)
+    try:
+        period = mode(periods)
+    except:
+        # group most_common output by frequency
+        periods_freqs = groupby(Counter(periods).most_common(), lambda x:x[1])
+        # pick off the first group (highest frequency)
+        periods_freqs = [val for val,count in next(periods_freqs)[1]]
+        period = median(periods_freqs)
+    finally:
+        return period

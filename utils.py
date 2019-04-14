@@ -32,7 +32,7 @@ def read_data(folder_path):
     periods = []
     df_list = []
     filenames = os.listdir(folder_path)
-    for filename in filenames:
+    for idx, filename in enumerate(filenames):
         if(filename.endswith('.tbl')):
             data = ascii.read(folder_path + filename).to_pandas()
             data = data[['TIME','SAP_FLUX','PDCSAP_FLUX','SAP_FLUX_ERR','PDCSAP_FLUX_ERR','CADENCENO']].dropna()
@@ -40,9 +40,12 @@ def read_data(folder_path):
 
             remove_noise(data, data.PDCSAP_FLUX,'PDC_RAW_MEDIAN')
             remove_noise(data, data.FPDC,'PDC_NORM_MEDIAN')
-
-            res = get_signal_parameters(data.dropna().TIME, data.dropna().PDC_RAW_MEDIAN)
-            periods.append(res["period"])
+            try:
+                res = get_signal_parameters(data.dropna().TIME, data.dropna().PDC_RAW_MEDIAN)
+                periods.append(res["period"])
+            except Exception as e:
+                print(e)
+                print(idx)
 
             df_list.append(data)
 
@@ -88,7 +91,7 @@ def get_signal_parameters(tt, yy):
     guess = np.array([guess_amp, 2.*np.pi*guess_freq, 0., guess_offset])
 
     def sinfunc(t, A, w, p, c):  return A * np.sin(w*t + p) + c
-    popt, pcov = optimize.curve_fit(sinfunc, tt, yy, p0=guess)
+    popt, pcov = optimize.curve_fit(sinfunc, tt, yy, p0=guess, maxfev=5000)
     A, w, p, c = popt
     f = w/(2.*np.pi)
     fitfunc = lambda t: A * np.sin(w*t + p) + c

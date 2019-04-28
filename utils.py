@@ -146,7 +146,7 @@ def get_download_url(page_text):
 
 def download_files(kic):
      r = requests.post(BASE_URL+"/cgi-bin/IERDownload/nph-IERDownload",
-                   data={'id': 3544595,
+                   data={'id': kic,
                          'inventory_mode': 'id_single',
                          'idtype': 'source',
                          'dataset':'kepler',

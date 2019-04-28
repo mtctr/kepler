@@ -1,21 +1,28 @@
 import os
+import requests
+import copy
 import pandas as pd
 import seaborn as sns
 import numpy as np
-import copy
 import matplotlib.pyplot as plt
+import subprocess
+
 from astropy.io import ascii
 from scipy import optimize
 from collections import Counter
 from itertools import groupby
 from statistics import mode
 from statistics import median
+from tqdm import tqdm
 
 ''' Constants with the column names '''
 col = ['SAP_FLUX','PDCSAP_FLUX']
 ecol = ['SAP_FLUX_ERR','PDCSAP_FLUX_ERR']
 col2 = ['F','FPDC']   # Names for the modified columns.
 ecol2 = ['EF','EFPDC']
+''' Constants for paths'''
+BASE_URL = "https://exoplanetarchive.ipac.caltech.edu"
+BASE_PATH = "datasets/tests/"
 
 sns.set()
 def read_data(folder_path):
@@ -120,3 +127,55 @@ def get_period(list):
         period = median(periods_freqs)
     finally:
         return period
+
+def remove_single_quotes(path):
+    file_in = path
+    file_out = path+'-ed'
+    with open(r""+file_in+"", 'r') as infile, \
+        open(r""+file_out+"", 'w') as outfile:
+        data = infile.read()
+        data = data.replace("\'", "")
+        outfile.write(data)
+    os.remove(file_in)
+    os.rename(file_out,file_out.replace('-ed',''))
+
+def get_download_url(page_text):
+    big = page_text[page_text.find('<big>'):page_text.find('</big>')]
+    link = big[big.find('/cgi'):big.find('t"')+1]
+    return link
+
+def download_files(kic):
+     r = requests.post(BASE_URL+"/cgi-bin/IERDownload/nph-IERDownload",
+                   data={'id': 3544595,
+                         'inventory_mode': 'id_single',
+                         'idtype': 'source',
+                         'dataset':'kepler',
+                         'resultmode':'webpage'})
+     link = get_download_url(r.text)
+     url = BASE_URL+link
+     response = requests.get(url, stream=True)
+     kic_str = str(kic)
+     kic_file_name = str(kic)+".bat"
+     folder_path = BASE_PATH+kic_str+"/"
+     path = BASE_PATH+kic_str+"/"+kic_file_name
+
+     if not os.path.exists(folder_path):
+         os.makedirs(folder_path)
+
+     with open(path, "wb") as handle:
+         for data in tqdm(response.iter_content()):
+             handle.write(data)
+     print(".bat downloaded")
+     remove_single_quotes(path)
+
+     print("downloading kepler files")
+     os.chdir(r""+folder_path+"")
+     subprocess.call([kic_file_name])
+     os.chdir("../../../")
+     print("kepler files downloaded")
+     return folder_path
+
+def get_kepler(kic):
+    folder_path = download_files(kic)
+    data = read_data(folder_path)
+    return data

@@ -84,7 +84,7 @@ def remove_noise(df,data,col_name='MEDIAN'):
     data: data to be adjusted
     field_name: name of the column to be added to the dataframe
     """
-    df[col_name] = data.rolling(10).median()
+    df[col_name] = data.rolling(30).median()
 
 def get_signal_parameters(tt, yy):
     '''Fit sin to the input time sequence, and return fitting parameters "amp", "omega", "phase", "offset", "freq", "period" and "fitfunc"'''

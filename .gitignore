@@ -1,0 +1,3 @@
+datasets/light-curves/*
+.ipynb_checkpoints/*
+.vscode/*

@@ -11,8 +11,7 @@ from astropy.io import ascii
 from scipy import optimize
 from collections import Counter
 from itertools import groupby
-from statistics import mode
-from statistics import median
+from statistics import mode, median, mean,stdev
 from tqdm import tqdm
 
 ''' Constants with the column names '''
@@ -22,42 +21,33 @@ col2 = ['F','FPDC']   # Names for the modified columns.
 ecol2 = ['EF','EFPDC']
 ''' Constants for paths'''
 BASE_URL = "https://exoplanetarchive.ipac.caltech.edu"
-BASE_PATH = "datasets/tests/"
+BASE_PATH = "datasets/light-curves/"
 
 sns.set()
-def read_data(folder_path):
+def process_data(folder_path):
     """
     Read and process all the kepler data inside a folder based on the path provided
 
     folder_path: path of the folder containing the data filenames
-
-    returns:
-
-    df_list: list with data frames for each quarter
-    period: estimated rotation period of the star
     """
-    periods = []
-    df_list = []
-    filenames = os.listdir(folder_path)
-    for idx, filename in enumerate(filenames):
-        if(filename.endswith('.tbl')):
+    filenames_tbl = get_filenames(folder_path,'tbl')
+    filenames_fits = get_filenames(folder_path,'fits')
+    for filename in filenames_fits:
+        os.remove(folder_path+filename)
+    for idx, filename in enumerate(filenames_tbl):
+        if(idx>=0):            
             data = ascii.read(folder_path + filename).to_pandas()
             data = data[['TIME','SAP_FLUX','PDCSAP_FLUX','SAP_FLUX_ERR','PDCSAP_FLUX_ERR','CADENCENO']].dropna()
             data = normalize_data(data)
 
             remove_noise(data, data.PDCSAP_FLUX,'PDC_RAW_MEDIAN')
             remove_noise(data, data.FPDC,'PDC_NORM_MEDIAN')
-            try:
-                res = get_signal_parameters(data.dropna().TIME, data.dropna().PDC_RAW_MEDIAN)
-                periods.append(res["period"])
-            except Exception as e:
-                print(e)
-                print(idx)
+    
+            data.to_csv(folder_path+filename.replace('.tbl','.csv'),index=False)
+            os.remove(folder_path+filename)
 
-            df_list.append(data)
-
-    period = get_period(periods)
-    return {"df_list": df_list, "period": period}
+def get_filenames(folder_path,extension):
+    return (f for f in os.listdir(folder_path) if f.endswith('.' + extension))
 
 def normalize_data(data):
     r = copy.deepcopy(data)
@@ -114,9 +104,10 @@ def remove_outliers(list):
     new_list = [x for x in new_list if (x < mean + 2*sd)]
     return new_list
 
-def get_period(list):
-    periods = round_elements(list,3)
-    periods = remove_outliers(periods)
+def get_period(periods_list):
+    periods = round_elements(periods_list,3)
+    if(len(periods)>1):
+        periods = remove_outliers(periods)
     try:
         period = mode(periods)
     except:
@@ -124,8 +115,35 @@ def get_period(list):
         periods_freqs = groupby(Counter(periods).most_common(), lambda x:x[1])
         # pick off the first group (highest frequency)
         periods_freqs = [val for val,count in next(periods_freqs)[1]]
-        period = median(periods_freqs)
+        if(len(periods_freqs)>1):
+            periods_freqs = remove_outliers(periods_freqs)
+        if(stdev(periods_freqs)<=5):
+            period = mean(periods_freqs)            
+        else:
+            try:            
+                periods_2 = round_elements(periods_freqs,2)
+                mode_2 = mode(periods_2)                
+                
+                period = mean(list(x for x in periods if mode_2-1 <= x <= mode_2+1))
+            except:
+                try:                    
+                    periods_1 = round_elements(periods_freqs,1)
+                    mode_1 = mode(periods_1)                
+                    
+                    period = mean(list(x for x in periods if mode_1-1 <= x <= mode_1+1))
+                except:
+                    try:
+                        periods_0 = round_elements(periods_freqs,0)
+                        mode_0 = mode(periods_0)                
+                        
+                        period = mean(list(x for x in periods if mode_0-1 <= x <= mode_0+1))
+                    except:
+                        periods_freqs = groupby(Counter(periods_0).most_common(), lambda x:x[1])
+                        periods_freqs = [val for val,count in next(periods_freqs)[1]]            
+                        period_freq = remove_outliers(periods_freqs)[0]
+                        period = mean(list(x for x in periods if period_freq-1 <= x <= period_freq+1))
     finally:
+        period = round(period,3)
         return period
 
 def remove_single_quotes(path):
@@ -145,37 +163,33 @@ def get_download_url(page_text):
     return link
 
 def download_files(kic):
-     r = requests.post(BASE_URL+"/cgi-bin/IERDownload/nph-IERDownload",
-                   data={'id': kic,
-                         'inventory_mode': 'id_single',
-                         'idtype': 'source',
-                         'dataset':'kepler',
-                         'resultmode':'webpage'})
-     link = get_download_url(r.text)
-     url = BASE_URL+link
-     response = requests.get(url, stream=True)
-     kic_str = str(kic)
-     kic_file_name = str(kic)+".bat"
-     folder_path = BASE_PATH+kic_str+"/"
-     path = BASE_PATH+kic_str+"/"+kic_file_name
+    r = requests.post(BASE_URL+"/cgi-bin/IERDownload/nph-IERDownload",
+                data={'id': kic,
+                        'inventory_mode': 'id_single',
+                        'idtype': 'source',
+                        'dataset':'kepler',
+                        'resultmode':'webpage'})
+    link = get_download_url(r.text)
+    url = BASE_URL+link
+    response = requests.get(url, stream=True)
+    kic_str = str(kic)
+    kic_file_name = str(kic)+".bat"
+    folder_path = BASE_PATH+kic_str+"/"
+    path = BASE_PATH+kic_str+"/"+kic_file_name
 
-     if not os.path.exists(folder_path):
-         os.makedirs(folder_path)
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
 
-     with open(path, "wb") as handle:
-         for data in tqdm(response.iter_content()):
-             handle.write(data)
-     print(".bat downloaded")
-     remove_single_quotes(path)
+    with open(path, "wb") as handle:
+        for data in tqdm(response.iter_content()):
+            handle.write(data)
+    print(".bat downloaded")
+    remove_single_quotes(path)
 
-     print("downloading kepler files")
-     os.chdir(r""+folder_path+"")
-     subprocess.call([kic_file_name])
-     os.chdir("../../../")
-     print("kepler files downloaded")
-     return folder_path
-
-def get_kepler(kic):
-    folder_path = download_files(kic)
-    data = read_data(folder_path)
-    return data
+    print("downloading kepler files")
+    os.chdir(r""+folder_path+"")
+    subprocess.call([kic_file_name])
+    os.chdir("../../../")
+    print("kepler files downloaded")
+    return folder_path
+    

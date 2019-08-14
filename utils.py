@@ -13,6 +13,7 @@ from collections import Counter
 from itertools import groupby
 from statistics import mode, median, mean, stdev
 from tqdm import tqdm
+from pwkit import pdm
 
 """ Constants with the column names """
 col = ["SAP_FLUX", "PDCSAP_FLUX"]
@@ -24,43 +25,31 @@ BASE_URL = "https://exoplanetarchive.ipac.caltech.edu"
 BASE_PATH = "datasets/light-curves/"
 
 sns.set()
-
-
 def process_data(folder_path):
     """
     Read and process all the kepler data inside a folder based on the path provided
 
     folder_path: path of the folder containing the data filenames
     """
-    columns = [
-        "TIME",
-        "SAP_FLUX",
-        "PDCSAP_FLUX",
-        "SAP_FLUX_ERR",
-        "PDCSAP_FLUX_ERR",
-        "CADENCENO",
-    ]
-    filenames_tbl = get_filenames(folder_path, "tbl")
-    filenames_fits = get_filenames(folder_path, "fits")
+    filenames_tbl = get_filenames(folder_path,'tbl')
+    filenames_fits = get_filenames(folder_path,'fits')
     for filename in filenames_fits:
-        os.remove(folder_path + filename)
+        os.remove(folder_path+filename)
     for idx, filename in enumerate(filenames_tbl):
         data = ascii.read(folder_path + filename).to_pandas()
-        data = data.interpolate(method="linear", columns=columns)
-        data = data[columns].dropna()
+        data = data.interpolate(method='linear', columns=['TIME','SAP_FLUX','PDCSAP_FLUX','SAP_FLUX_ERR','PDCSAP_FLUX_ERR','CADENCENO'])        
+        data = data[['TIME','SAP_FLUX','PDCSAP_FLUX','SAP_FLUX_ERR','PDCSAP_FLUX_ERR','CADENCENO']].dropna()
         data = normalize_data(data)
 
-        remove_noise(data, data.PDCSAP_FLUX, "PDC_RAW_FILT")
-        remove_noise(data, data.FPDC, "PDC_NORM_FILT")
+        remove_noise(data, data.PDCSAP_FLUX,'PDC_RAW_FILT')
+        remove_noise(data, data.FPDC,'PDC_NORM_FILT')
 
-        data = data.dropna()
-        data.to_csv(folder_path + filename.replace(".tbl", ".csv"), index=False)
-        os.remove(folder_path + filename)
+        data = data.dropna()    
+        data.to_csv(folder_path+filename.replace('.tbl','.csv'),index=False)
+        os.remove(folder_path+filename)
 
-
-def get_filenames(folder_path, extension):
-    return list(f for f in os.listdir(folder_path) if f.endswith("." + extension))
-
+def get_filenames(folder_path,extension):
+    return list(f for f in os.listdir(folder_path) if f.endswith('.' + extension))
 
 def normalize_data(data):
     r = copy.deepcopy(data)
@@ -91,7 +80,6 @@ def remove_noise(df, data, col_name="FILT"):
     """
     df[col_name] = data.rolling(170).mean()
 
-
 def get_signal_parameters(tt, yy):
     '''Fit sin to the input time sequence, and return fitting parameters "amp", "omega", "phase", "offset", "freq", "period" and "fitfunc"'''
     tt = np.array(tt)
@@ -105,9 +93,7 @@ def get_signal_parameters(tt, yy):
     guess_offset = np.mean(yy)
     guess = np.array([guess_amp, 2.0 * np.pi * guess_freq, 0.0, guess_offset])
 
-    def sinfunc(t, A, w, p, c):
-        return A * np.sin(w * t + p) + c
-
+    def sinfunc(t, A, w, p, c):  return A * np.sin(w*t + p) + c
     popt, pcov = optimize.curve_fit(sinfunc, tt, yy, p0=guess, maxfev=7000)
     A, w, p, c = popt
     f = w / (2.0 * np.pi)
@@ -137,59 +123,11 @@ def remove_outliers(list):
     return new_list
 
 
-def get_period(periods_list):
+def get_period(t,y,u,periods_list):
     periods = round_elements(periods_list, 3)
-    if len(periods) > 1:
-        periods = remove_outliers(periods)
-    try:
-        period = mode(periods)
-    except:
-        # group most_common output by frequency
-        periods_freqs = groupby(Counter(periods).most_common(), lambda x: x[1])
-        # pick off the first group (highest frequency)
-        periods_freqs = [val for val, count in next(periods_freqs)[1]]
-        if len(periods_freqs) > 1:
-            periods_freqs = remove_outliers(periods_freqs)
-        if stdev(periods_freqs) <= 5:
-            period = mean(periods_freqs)
-        else:
-            try:
-                periods_2 = round_elements(periods_freqs, 2)
-                mode_2 = mode(periods_2)
-
-                period = mean(list(x for x in periods if mode_2 - 1 <= x <= mode_2 + 1))
-            except:
-                try:
-                    periods_1 = round_elements(periods_freqs, 1)
-                    mode_1 = mode(periods_1)
-
-                    period = mean(
-                        list(x for x in periods if mode_1 - 1 <= x <= mode_1 + 1)
-                    )
-                except:
-                    try:
-                        periods_0 = round_elements(periods_freqs, 0)
-                        mode_0 = mode(periods_0)
-
-                        period = mean(
-                            list(x for x in periods if mode_0 - 1 <= x <= mode_0 + 1)
-                        )
-                    except:
-                        periods_freqs = groupby(
-                            Counter(periods_0).most_common(), lambda x: x[1]
-                        )
-                        periods_freqs = [val for val, count in next(periods_freqs)[1]]
-                        period_freq = remove_outliers(periods_freqs)[0]
-                        period = mean(
-                            list(
-                                x
-                                for x in periods
-                                if period_freq - 1 <= x <= period_freq + 1
-                            )
-                        )
-    finally:
-        period = round(period, 3)
-        return period
+    _pdm = pdm.pdm(t,y,u,periods,10)
+    period = _pdm.pmin
+    return period
 
 
 def remove_single_quotes(path):
@@ -245,4 +183,4 @@ def download_files(kic):
     os.chdir("../../../")
     print("kepler files downloaded")
     return folder_path
-
+    

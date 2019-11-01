@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import subprocess
 
 from astropy.io import ascii
+from astropy.timeseries import LombScargle
 from scipy import optimize
 from collections import Counter
 from itertools import groupby
@@ -31,14 +32,15 @@ def process_data(folder_path):
 
     folder_path: path of the folder containing the data filenames
     """
+    columns=['TIME','SAP_FLUX','PDCSAP_FLUX','SAP_FLUX_ERR','PDCSAP_FLUX_ERR','CADENCENO']
     filenames_tbl = get_filenames(folder_path,'tbl')
     filenames_fits = get_filenames(folder_path,'fits')
     for filename in filenames_fits:
         os.remove(folder_path+filename)
     for idx, filename in enumerate(filenames_tbl):
         data = ascii.read(folder_path + filename).to_pandas()
-        data = data.interpolate(method='linear', columns=['TIME','SAP_FLUX','PDCSAP_FLUX','SAP_FLUX_ERR','PDCSAP_FLUX_ERR','CADENCENO'])        
-        data = data[['TIME','SAP_FLUX','PDCSAP_FLUX','SAP_FLUX_ERR','PDCSAP_FLUX_ERR','CADENCENO']].dropna()
+        data = data.interpolate(method='linear', columns=columns)        
+        data = data[columns].dropna()
         data = normalize_data(data)
 
         remove_noise(data, data.PDCSAP_FLUX,'PDC_RAW_FILT')
@@ -78,9 +80,9 @@ def remove_noise(df, data, col_name="FILT"):
     data: data to be adjusted
     field_name: name of the column to be added to the dataframe
     """
-    df[col_name] = data.rolling(170).mean()
+    df[col_name] = data.rolling(300).mean()
 
-def get_signal_parameters(tt, yy):
+def fit_sin_fft(tt, yy):
     '''Fit sin to the input time sequence, and return fitting parameters "amp", "omega", "phase", "offset", "freq", "period" and "fitfunc"'''
     tt = np.array(tt)
     yy = np.array(yy)
@@ -110,7 +112,6 @@ def get_signal_parameters(tt, yy):
         "rawres": (guess, popt, pcov),
     }
 
-
 def round_elements(list, n_places):
     return [round(elem, n_places) for elem in list]
 
@@ -122,12 +123,39 @@ def remove_outliers(list):
     new_list = [x for x in new_list if (x < mean + 2 * sd)]
     return new_list
 
+def get_range_freqs(t):    
+    min_period = 2*(t[1] - t[0])
+    max_period = t.max() - t.min()
 
-def get_period(t,y,u,periods_list):
-    periods = round_elements(periods_list, 3)
-    _pdm = pdm.pdm(t,y,u,periods,10)
-    period = _pdm.pmin
+    max_freq = 1/min_period
+    min_freq = 1/max_period
+    step_freq = (max_freq - min_freq)/(t.size*10)
+    
+    frequencies = np.arange(min_freq,max_freq,step_freq)
+    return frequencies
+
+def get_freq_LS(t,y,dy):
+    frequencies = get_range_freqs(t)
+    ls = LombScargle(t, y, dy)    
+    power = ls.power(frequencies)
+    best_freq = frequencies[np.argmax(power)]
+    return best_freq
+
+def get_period(t,y,dy,frequencies=None):
+    if frequencies == None:
+        frequencies = get_range_freqs(t)
+    
+    ls = LombScargle(t, y, dy)
+    power = ls.power(frequencies)    
+    best_freq = frequencies[np.argmax(power)]
+    period = round(1/best_freq,3)    
     return period
+
+def get_period_pdm(t,y,dy,periods_list,nbins):
+    periods = round_elements(periods_list, 3)    
+    _pdm = pdm.pdm(t,y,dy,periods,nbins)
+    period = _pdm.pmin
+    return [period, _pdm.thetas[_pdm.imin]]
 
 
 def remove_single_quotes(path):
